@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
     @keyframes float {
@@ -161,18 +163,24 @@
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold text-center mb-12 text-amber-400">Our Services</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="service-card bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-gray-900 hover:to-gray-800">
-          <div class="text-5xl mb-4 transform transition-transform duration-500 hover:rotate-12">💡</div>
+        <div class="service-card bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-gray-900 hover:to-gray-800 group">
+          <div class="w-16 h-16 mb-6 bg-amber-400 rounded-xl flex items-center justify-center transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+            <i data-lucide="lightbulb" class="text-gray-900" width="32" height="32"></i>
+          </div>
           <h3 class="text-2xl font-semibold mb-4 text-white">Strategy</h3>
           <p class="text-gray-400">Brand strategy, positioning, and go-to-market planning.</p>
         </div>
-        <div class="service-card bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-gray-900 hover:to-gray-800">
-          <div class="text-5xl mb-4 transform transition-transform duration-500 hover:rotate-12">🎨</div>
+        <div class="service-card bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-gray-900 hover:to-gray-800 group">
+          <div class="w-16 h-16 mb-6 bg-amber-400 rounded-xl flex items-center justify-center transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+            <i data-lucide="palette" class="text-gray-900" width="32" height="32"></i>
+          </div>
           <h3 class="text-2xl font-semibold mb-4 text-white">Design & Branding</h3>
           <p class="text-gray-400">Visual identity, creative direction, and omni-channel branding.</p>
         </div>
-        <div class="service-card bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-gray-900 hover:to-gray-800">
-          <div class="text-5xl mb-4 transform transition-transform duration-500 hover:rotate-12">📊</div>
+        <div class="service-card bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-gray-900 hover:to-gray-800 group">
+          <div class="w-16 h-16 mb-6 bg-amber-400 rounded-xl flex items-center justify-center transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+            <i data-lucide="bar-chart-3" class="text-gray-900" width="32" height="32"></i>
+          </div>
           <h3 class="text-2xl font-semibold mb-4 text-white">Development & Analytics</h3>
           <p class="text-gray-400">Digital experiences, data insights, and performance optimization.</p>
         </div>
@@ -183,12 +191,27 @@
   <!-- Company Facts -->
   <section class="py-20 px-8 max-w-5xl mx-auto text-center" data-aos="fade-up">
     <h2 class="text-4xl font-bold mb-10 text-amber-400">Company Facts</h2>
-    <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-300">
-      <p><strong class="text-white">Founded:</strong> 2010</p>
-      <p><strong class="text-white">Employees:</strong> 50–200</p>
-      <p><strong class="text-white">Revenue:</strong> $25M–100M</p>
-      <p><strong class="text-white">Headquarters:</strong> Brooklyn, NY</p>
-      <p><strong class="text-white">Entity ID:</strong> 202253819814 (California)</p>
+    <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-300">
+      <div class="flex items-center gap-3">
+        <i data-lucide="calendar" class="text-amber-400" width="24" height="24"></i>
+        <p><strong class="text-white">Founded:</strong> 2010</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <i data-lucide="users" class="text-amber-400" width="24" height="24"></i>
+        <p><strong class="text-white">Employees:</strong> 50–200</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <i data-lucide="trending-up" class="text-amber-400" width="24" height="24"></i>
+        <p><strong class="text-white">Revenue:</strong> $25M–100M</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <i data-lucide="map-pin" class="text-amber-400" width="24" height="24"></i>
+        <p><strong class="text-white">Headquarters:</strong> Brooklyn, NY</p>
+      </div>
+      <div class="flex items-center gap-3 md:col-span-2 justify-center">
+        <i data-lucide="file-text" class="text-amber-400" width="24" height="24"></i>
+        <p><strong class="text-white">Entity ID:</strong> 202253819814 (California)</p>
+      </div>
     </div>
   </section>
 
@@ -278,9 +301,18 @@
       </div>
       <div>
         <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
-        <p class="text-gray-400 text-sm">📍 Brooklyn, NY</p>
-        <p class="text-gray-400 text-sm">📞 +1 (555) 123-4567</p>
-        <p class="text-gray-400 text-sm">✉️ <a href="mailto:hello@madwell.com" class="hover:text-amber-400 transition">hello@madwell.com</a></p>
+        <div class="flex items-center gap-2 mb-2">
+          <i data-lucide="map-pin" class="text-amber-400" width="16" height="16"></i>
+          <p class="text-gray-400 text-sm">Brooklyn, NY</p>
+        </div>
+        <div class="flex items-center gap-2 mb-2">
+          <i data-lucide="phone" class="text-amber-400" width="16" height="16"></i>
+          <p class="text-gray-400 text-sm">+1 (555) 123-4567</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="mail" class="text-amber-400" width="16" height="16"></i>
+          <p class="text-gray-400 text-sm"><a href="mailto:hello@madwell.com" class="hover:text-amber-400 transition">hello@madwell.com</a></p>
+        </div>
       </div>
       <div>
         <h3 class="text-white text-xl font-bold mb-4">Subscribe</h3>
@@ -424,14 +456,8 @@
       });
     });
 
-    // Parallax Effect on Hero
-    window.addEventListener('scroll', () => {
-      const scrolled = window.pageYOffset;
-      const heroSection = document.querySelector('section');
-      if (heroSection && scrolled < window.innerHeight) {
-        heroSection.style.transform = `translateY(${scrolled * 0.5}px)`;
-      }
-    });
+    // Initialize Lucide Icons
+    lucide.createIcons();
 
     // Add hover effects to service cards
     const serviceCards = document.querySelectorAll('.service-card');
