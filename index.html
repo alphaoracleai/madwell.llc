@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madwell - Creative Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 fixed w-full z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-extrabold text-amber-400 tracking-tight">Madwell</a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 text-gray-300 font-medium">
+          <li><a href="#about" class="hover:text-amber-400 transition">About</a></li>
+          <li><a href="#services" class="hover:text-amber-400 transition">Services</a></li>
+          <li><a href="#testimonials" class="hover:text-amber-400 transition">Testimonials</a></li>
+          <li><a href="#contact" class="hover:text-amber-400 transition">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-300 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+      <ul class="flex flex-col p-4 space-y-2 text-gray-300 font-medium">
+        <li><a href="#about" class="hover:text-amber-400 transition">About</a></li>
+        <li><a href="#services" class="hover:text-amber-400 transition">Services</a></li>
+        <li><a href="#testimonials" class="hover:text-amber-400 transition">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-amber-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white py-32 px-8 text-center" data-aos="fade-down">
+    <h1 class="text-6xl font-extrabold mb-4 tracking-tight">Madwell</h1>
+    <p class="text-2xl mb-8 text-gray-300">Integrated Creative Agency – Building Omni-Personal Brands</p>
+    <a href="#contact" class="bg-amber-400 text-gray-900 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-amber-300 transition">Work With Us</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-8 max-w-5xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-8 text-amber-400">About Us</h2>
+    <p class="text-lg leading-relaxed text-gray-300">
+      Founded in 2010 and headquartered in Brooklyn, with an office in Boulder, Madwell is an integrated creative agency. 
+      We focus on unifying every touchpoint of a brand experience, crafting omni-personal identities that truly resonate.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 px-8 bg-gray-800" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 text-amber-400">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+          <h3 class="text-2xl font-semibold mb-4 text-white">Strategy</h3>
+          <p class="text-gray-400">Brand strategy, positioning, and go-to-market planning.</p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+          <h3 class="text-2xl font-semibold mb-4 text-white">Design & Branding</h3>
+          <p class="text-gray-400">Visual identity, creative direction, and omni-channel branding.</p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+          <h3 class="text-2xl font-semibold mb-4 text-white">Development & Analytics</h3>
+          <p class="text-gray-400">Digital experiences, data insights, and performance optimization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Facts -->
+  <section class="py-20 px-8 max-w-5xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-10 text-amber-400">Company Facts</h2>
+    <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-300">
+      <p><strong class="text-white">Founded:</strong> 2010</p>
+      <p><strong class="text-white">Employees:</strong> 50–200</p>
+      <p><strong class="text-white">Revenue:</strong> $25M–100M</p>
+      <p><strong class="text-white">Headquarters:</strong> Brooklyn, NY</p>
+      <p><strong class="text-white">Entity ID:</strong> 202253819814 (California)</p>
+    </div>
+  </section>
+
+  <!-- DEI Commitment -->
+  <section class="py-20 px-8 bg-gray-800" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8 text-amber-400">Diversity, Equity & Inclusion</h2>
+      <p class="text-lg mb-8 text-gray-300">We are committed to creating an inclusive and diverse workplace.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-8 rounded-2xl shadow-lg">
+          <h3 class="text-3xl font-bold text-amber-400">30%</h3>
+          <p class="text-gray-300">BIPOC Representation</p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl shadow-lg">
+          <h3 class="text-3xl font-bold text-amber-400">15%</h3>
+          <p class="text-gray-300">Black Representation</p>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-2xl shadow-lg">
+          <h3 class="text-3xl font-bold text-amber-400">52%</h3>
+          <p class="text-gray-300">Women Representation</p>
+        </div>
+      </div>
+      <p class="mt-8 text-sm text-gray-400">Employee resource groups: BAM (Black Madwellians), Queerwell, and more.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 px-8 bg-gray-900" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12 text-amber-400">What Our Clients Say</h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <p class="text-gray-300 mb-6">“Madwell transformed our brand identity. Their strategy and creativity are unmatched.”</p>
+            <h3 class="text-white font-bold">Jane Doe</h3>
+            <p class="text-amber-400 text-sm">CEO, CreativeCorp</p>
+          </div>
+          <div class="swiper-slide bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <p class="text-gray-300 mb-6">“Working with Madwell was seamless. Our omni-personal brand now resonates globally.”</p>
+            <h3 class="text-white font-bold">John Smith</h3>
+            <p class="text-amber-400 text-sm">CMO, InnovateX</p>
+          </div>
+          <div class="swiper-slide bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <p class="text-gray-300 mb-6">“The team’s attention to detail and creative insight made all the difference.”</p>
+            <h3 class="text-white font-bold">Lisa Wong</h3>
+            <p class="text-amber-400 text-sm">Founder, BoldBrand</p>
+          </div>
+          <div class="swiper-slide bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <p class="text-gray-300 mb-6">“Madwell helped us create a unified brand experience across all channels.”</p>
+            <h3 class="text-white font-bold">Carlos Rivera</h3>
+            <p class="text-amber-400 text-sm">Head of Marketing, BrightFuture</p>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="contact" class="py-24 px-8 bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-300 text-gray-900 text-center" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-6">Let’s Build Together</h2>
+    <p class="mb-8 text-lg">Get in touch with us to start creating omni-personal brand experiences.</p>
+    <a href="mailto:hello@madwell.com" class="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-gray-800 transition">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-white text-xl font-bold mb-4">Madwell</h3>
+        <p class="text-gray-400 text-sm">
+          Integrated Creative Agency – Building Omni-Personal Brands since 2010.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#about" class="hover:text-amber-400 transition">About Us</a></li>
+          <li><a href="#services" class="hover:text-amber-400 transition">Services</a></li>
+          <li><a href="#testimonials" class="hover:text-amber-400 transition">Testimonials</a></li>
+          <li><a href="#contact" class="hover:text-amber-400 transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
+        <p class="text-gray-400 text-sm">📍 Brooklyn, NY</p>
+        <p class="text-gray-400 text-sm">📞 +1 (555) 123-4567</p>
+        <p class="text-gray-400 text-sm">✉️ <a href="mailto:hello@madwell.com" class="hover:text-amber-400 transition">hello@madwell.com</a></p>
+      </div>
+      <div>
+        <h3 class="text-white text-xl font-bold mb-4">Subscribe</h3>
+        <form class="flex flex-col sm:flex-row gap-2">
+          <input type="email" placeholder="Your email" class="p-2 rounded bg-gray-800 text-white flex-1 focus:outline-none focus:ring-2 focus:ring-amber-400">
+          <button type="submit" class="bg-amber-400 text-gray-900 px-4 py-2 rounded font-semibold hover:bg-amber-300 transition">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-gray-500 text-sm">
+      © 2025 Madwell. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Swiper
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2, spaceBetween: 30 },
+        1024: { slidesPerView: 3, spaceBetween: 40 },
+      },
+    });
+
+    // AOS
+    AOS.init({ duration: 1000, once: true });
+
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
